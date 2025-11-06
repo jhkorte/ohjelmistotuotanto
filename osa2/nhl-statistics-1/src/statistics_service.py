@@ -6,7 +6,7 @@ class StatisticsService:
     def __init__(self, playerReader):
         self.reader = playerReader
 
-        self._players = reader.get_players()
+        self._players = self.reader.get_players()
 
     def search(self, name):
         for player in self._players:
