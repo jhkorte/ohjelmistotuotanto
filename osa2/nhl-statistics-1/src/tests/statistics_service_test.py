@@ -23,6 +23,11 @@ class TestStatisticsService(unittest.TestCase):
         self.assertEqual("Hello World","Hello World")
 
 
+    def test_search_fail(self):
+        haku = self.stats.search("Barkov")
+        self.assertIsNone(haku)
+
+
     def test_search(self):
         pelaaja = self.stats.search("Gretzky")
         print(pelaaja)
