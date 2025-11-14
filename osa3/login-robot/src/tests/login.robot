@@ -11,7 +11,7 @@ Login With Incorrect Password
     Input Credentials  wrongname  wrongpass
     Output Should Contain  Invalid username or password
 
-Logn With Nonexistent Username
+Login With Nonexistent Username
     Input Credentials  wrongname  password
     Output Should Contain  Invalid username or password
 
